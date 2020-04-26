@@ -1,5 +1,5 @@
 -name: Play1
-  hosts: localhost
+  hosts: local host
   tasks:
     -name: Ping
      ping:
