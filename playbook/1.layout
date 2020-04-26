@@ -1,4 +1,8 @@
-- name: Play1 
+--- 
+- 
   hosts: all
-  tasks:
-      ping: 
+  name: Play1
+  tasks: 
+    - 
+      name: Play1
+      ping: ~
