@@ -1,5 +1,5 @@
 -name: Play1
-  hosts: all
+  hosts:all
   tasks:
     -name: Ping
      ping:
