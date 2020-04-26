@@ -10,4 +10,5 @@
     - name:  craete an empty file
       file:
         path: /tmp/demo
+        state:  touch
 
