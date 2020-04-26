@@ -1,0 +1,5 @@
+-name: Play1
+  hosts: local host
+  tasks:
+    -name: Ping
+     ping:
