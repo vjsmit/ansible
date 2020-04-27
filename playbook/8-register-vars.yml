@@ -9,6 +9,6 @@
      set_fact:
       UPTIME: "{{OUT.stdout}}"
      
-    - name: Print UPTIME variable
-      debug:
-       msg: "UPTIME = {{UPTIME}}"
+   - name: Print UPTIME variable
+     debug:
+      msg: "UPTIME = {{UPTIME}}"
