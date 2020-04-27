@@ -4,3 +4,5 @@
    - name: Print URL
      debug:
       msg: "URL = {{URL}}"
+     
+####print using input from cli using -e option
