@@ -4,7 +4,7 @@
     - name: install webserver
       package:
         name: httpd
-        state: Present
+        state: present
      
     - name: Start httpd
       services:
