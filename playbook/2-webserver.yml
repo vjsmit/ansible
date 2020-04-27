@@ -7,6 +7,6 @@
         state: present
      
     - name: Start httpd
-      services:
+      service:
         name: httpd
         state: started
