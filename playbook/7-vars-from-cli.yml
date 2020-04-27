@@ -1,5 +1,5 @@
 - name: demo on vars from cli
-  host: all
+  hosts: all
   tasks:
    - name: Print URL
      debug:
