@@ -2,12 +2,12 @@
   hosts: all
   tasks:
    -name: Get Uptime
-    shell: uptime
-    register: OUT
+     shell: uptime
+     register: OUT
    
    -name: Define a variable
-    set_fact:
-     UPTIME: "{{OUT.stdout}}"
+     set_fact:
+      UPTIME: "{{OUT.stdout}}"
      
     -name: Print UPTIME variable
      debug:
