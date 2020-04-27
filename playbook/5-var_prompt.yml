@@ -3,6 +3,7 @@
   vars_prompt:
    - prompt: ENTER URL
      name: URL
+     private: no
   tasks:
    - name: Print URL
      debug:
