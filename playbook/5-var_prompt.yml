@@ -1,5 +1,5 @@
 - name: demo on var_prompt
-  host: all
+  hosts: all
   vars_prompt:
    - prompt: ENTER URL
      name: URL
