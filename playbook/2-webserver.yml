@@ -6,7 +6,7 @@
      - name: webserver
        state: Present
      
-- name: Start httpd
-  services:
-   - name: httpd
-     state: started
+   - name: Start httpd
+     services:
+     - name: httpd
+       state: started
