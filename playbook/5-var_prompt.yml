@@ -5,4 +5,5 @@
      name: URL
   tasks:
    - name: Print URL
-     msg: "{{URL}}"
+     debug:
+        msg: "{{URL}}"
