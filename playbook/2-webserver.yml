@@ -3,7 +3,7 @@
   tasks:
     - name: install webserver
       package:
-        name: webserver
+        name: httpd
         state: Present
      
     - name: Start httpd
