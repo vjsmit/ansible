@@ -1,1 +1,8 @@
 - name: demo on var_files
+  hosts: all
+  vars_files:
+    - varsfile.yml
+  tasks:
+   - name:Print URL
+     debug:
+      msg:"URL = {{URL}}"
