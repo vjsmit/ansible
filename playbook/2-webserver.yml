@@ -1,0 +1,11 @@
+- name: Install webserver
+  hosts: all
+  tasks:
+   - name: httpd
+     state: Present
+     
+- name: Start httpd
+  hosts: all
+  tasks:
+  - name: httpd
+    state: started
