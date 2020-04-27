@@ -1,0 +1,8 @@
+- name: demo on var_prompt
+  host: all
+  vars_prompt:
+   - prompt: ENTER URL
+     name: URL
+  tasks:
+   - name: Print URL
+     msg: "{{URL}}"
