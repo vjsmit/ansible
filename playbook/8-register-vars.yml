@@ -1,0 +1,5 @@
+- name: Register a variable from output of one task
+  hosts: all
+  tasks:
+   - name: Get Uptime
+     shell: uptime
