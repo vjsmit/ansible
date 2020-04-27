@@ -1,6 +1,6 @@
 - name: Install webserver
   hosts: all
-  tasks:
+  package:
    - name: httpd
      state: Present
      
