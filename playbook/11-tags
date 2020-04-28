@@ -6,3 +6,16 @@
       msg: "one"
      tags: 
       - one
+     debug:
+      msg: "two"
+     tags:
+      - two
+     debug:
+      msg: "three"
+     tags:
+      - three
+     debug:
+      msg: "three"
+     tags:
+      - four
+      
