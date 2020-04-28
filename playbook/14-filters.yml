@@ -1,0 +1,10 @@
+- name: check load avg and send email
+  hosts: all
+  tasks:
+   - name: Get the load avg
+     shell: uptime
+     register: out
+     
+   - name: fetch the load value
+     set_fact:
+      LOAD: "{{out.stdout.split()}}"
