@@ -7,5 +7,5 @@
      
    - name: fetch the load avg
      debug:
-      msg: "{{out.stdout.split()}}"
+      msg: "{{out.stdout.split()[-3]}}"
 
