@@ -4,6 +4,7 @@
    - name: 
      shell: which dpkg
      register: out
+     ignore_errors: yes
 
    - name: find kernel rpm  version
      shell: dpkg --list | grep kernel
