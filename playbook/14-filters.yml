@@ -7,10 +7,30 @@
      
    - name: fetch the load avg
      set_fact:
-      LOAD: "{{out.stdout.split()[-3].split('.')[0]}}"
-      #LOAD: "6"
+      #LOAD: "{{out.stdout.split()[-3].split('.')[0]}}"
+      LOAD: "6"
    - name: send email
-     shell: curl abc.com
+     shell: curl -s \
+  -X POST \
+  --user "api:9faa859aa2fdc58724ccb9cc3d34c05d:8c780521e171b4b315291545024e02e7" \
+  https://api.mailjet.com/v3.1/send \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "Messages":[
+      {
+        "From": {
+          "Email": "jenkins@devops.ml",
+          "Name": "Load average notify"
+        },
+        "To": [
+          {
+            "Email": "vj.smit97@gmail.com",
+            "Name": "Smit"
+          }
+        ],
+        "Subject": "LOAD AVERAGE!",
+        "TextPart": "LOAD Average is high on server",
+        "HTMLPart": "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>
      when: LOAD > "5"
    
 
