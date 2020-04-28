@@ -1,7 +1,8 @@
 - name: demo on tags
   hosts: all
   tasks:
-   demo:
-    msg: "one"
-   tags: 
-    - one
+   - name: Print one
+     demo:
+      msg: "one"
+     tags: 
+      - one
