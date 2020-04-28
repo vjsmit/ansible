@@ -9,3 +9,11 @@
       - Vijay
       - Lowes
       - India
+   - name: print multiple items
+     debug:
+      msg: "Hello, {{item[0]}} & {{item[1]}}"
+     loop:
+      - Smit
+      - Vj
+      - test
+      - odi
