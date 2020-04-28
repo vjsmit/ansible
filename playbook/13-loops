@@ -1,0 +1,10 @@
+- name: demo on loop
+  host: all
+  tasks:
+   debug:
+    msg:
+   loop:
+    Smit
+    Vijay
+    Lowes
+    India
