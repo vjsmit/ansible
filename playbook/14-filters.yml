@@ -4,4 +4,8 @@
    - name: Get the load avg
      shell: uptime
      register: out
+     
+   - name: fetch the load avg
+     debug:
+      msg: "out"
 
