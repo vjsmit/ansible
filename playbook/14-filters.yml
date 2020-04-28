@@ -7,4 +7,4 @@
      
    - name: fetch the load value
      set_fact:
-      LOAD: "{{out.stdout.split()}}"
+      LOAD: "{{out.stdout.split()[-3].split('.')[0]}}"
