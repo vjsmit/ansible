@@ -4,7 +4,7 @@
    debug:
     msg:
    loop:
-    Smit
-    Vijay
-    Lowes
-    India
+    - Smit
+    - Vijay
+    - Lowes
+    - India
