@@ -2,7 +2,7 @@
   hosts: all
   tasks:
    - name: Print one
-     demo:
+     debug:
       msg: "one"
      tags: 
       - one
