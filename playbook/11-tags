@@ -6,14 +6,17 @@
       msg: "one"
      tags: 
       - one
+   - name: Print two
      debug:
       msg: "two"
      tags:
       - two
+   - name: Print three
      debug:
       msg: "three"
      tags:
       - three
+   - name: Print four
      debug:
       msg: "four"
      tags:
