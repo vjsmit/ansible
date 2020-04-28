@@ -10,6 +10,6 @@
       LOAD: "{{out.stdout.split()[-3].split('.')[0]}}"
    - name: send email
      shell: curl abc.com
-     when: LOAD > 5
+     when: LOAD > "5"
    
 
