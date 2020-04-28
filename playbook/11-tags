@@ -1,0 +1,7 @@
+- name: demo on tags
+  hosts: all
+  tasks:
+   demo:
+    msg: "one"
+   tags: 
+    - one
