@@ -10,27 +10,7 @@
       #LOAD: "{{out.stdout.split()[-3].split('.')[0]}}"
       LOAD: "6"
    - name: send email
-     shell: curl -s \
-  -X POST \
-  --user "api:9faa859aa2fdc58724ccb9cc3d34c05d:8c780521e171b4b315291545024e02e7" \
-  https://api.mailjet.com/v3.1/send \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "Messages":[
-      {
-        "From": {
-          "Email": "jenkins@devops.ml",
-          "Name": "Load average notify"
-        },
-        "To": [
-          {
-            "Email": "vj.smit97@gmail.com",
-            "Name": "Smit"
-          }
-        ],
-        "Subject": "LOAD AVERAGE!",
-        "TextPart": "LOAD Average is high on server",
-        "HTMLPart": "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>
+     shell: curl -s --user 'api:fb37630f251d4e4026404bda2b068349-898ca80e-37c793a4'  https://api.mailgun.net/v3/sandboxac88c5b19eee4a63992f652822d0ae8e.mailgun.org/messages  -F from='LOAD AVERAGE NOTIFY<jenkins@devops.ml>'  -F to='Raghu <vj.smit97@gmail.com>'  -F subject='LOAD AVERAGE - {{ansible_hostname}}'  -F text="Load Average is High on Server\n\n{{out.stdout}}\n\nRegards,\nAnsible Monitoring Team."
      when: LOAD > "5"
    
 
