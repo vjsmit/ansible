@@ -13,7 +13,5 @@
      debug:
       msg: "Hello, {{item[0]}} & {{item[1]}}"
      loop:
-      - Smit
-      - Vj
-      - test
-      - odi
+      - [Smit, Vijay]
+      - [test, odi]
