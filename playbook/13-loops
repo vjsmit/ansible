@@ -1,10 +1,11 @@
 - name: demo on loop
   hosts: all
   tasks:
-   debug:
-    msg: "Hello, {{item}}"
-   loop:
-    - Smit
-    - Vijay
-    - Lowes
-    - India
+   - name: print items
+     debug:
+      msg: "Hello, {{item}}"
+     loop:
+      - Smit
+      - Vijay
+      - Lowes
+      - India
