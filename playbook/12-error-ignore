@@ -1,0 +1,10 @@
+- name: demo on ignoring error
+  hosts: all
+  tasks:
+   - name: 
+     shell: which dpkg
+     register: out
+
+   - name: find kernel rpm  version
+     shell: dpkg --list | grep kernel
+     when: out.rc == 0
