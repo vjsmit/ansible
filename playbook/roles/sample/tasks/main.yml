@@ -1,4 +1,4 @@
-- name: 
-  hosts: all
-  tasks:
+- name: Print hello Sample role
+  debug:
+   msg: "Hello"
    
