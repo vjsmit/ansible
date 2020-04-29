@@ -1,0 +1,4 @@
+- name: Install Web Server & App Server
+  hosts: all
+  roles:
+   - webserver
