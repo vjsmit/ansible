@@ -4,4 +4,4 @@
   
 - name: load Ubuntu play
   include: ubuntu.yml
-  when: ansible_distribuition == "Ubuntu"
+  when: ansible_distribution == "Ubuntu"
